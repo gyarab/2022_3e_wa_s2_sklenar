@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UwU Gallery</title>
+    <link rel="stylesheet" href="../styles/UwUgallery.css">
+</head>
+<body class="hp">
+    <nav>
+        <div class="menu">
+            <a class="icon_logo" href="../UwU.html"></a>
+            <a href="../UwU.html">Home</a>
+            <a href="UwUgallery.html">Gallery</a>
+            <a href="UwUchat.html">Chat</a>
+            <a href="UwUeshop.html">E-shop</a>
+            <input type="text" placeholder="Search..">
+            <a class="sign" href="UwUsignin.html">Sign in</a>
+    </nav>
+    <header>
+        <h1>Akeno Himejima fanpage gallery</h1>
+    </header>
+
+    <div class="slides">
+        <div class="prechod fade">
+            <div class="cisloSlide">1 / 5</div>
+            <img src="../styles/images/Akeno_uniform.webp" alt="">
+        </div>
+        <div class="prechod fade">
+            <div class="cisloSlide">2 / 5</div>
+            <img src="../styles/images/Akeno_new-2.webp" alt="F">
+        </div>
+        <div class="prechod fade">
+            <div class="cisloSlide">3 / 5</div>
+            <img src="../styles/images/ID2QtkjyBvUYS_-_Copy.webp" alt="FF">
+        </div>
+        <div class="prechod fade">
+            <div class="cisloSlide">4 / 5</div>
+            <img src="../styles/images/Akeno_DxD_Born_Visual_Collection.webp" alt="F">
+        </div>
+        <div class="prechod fade">
+            <div class="cisloSlide">5 / 5</div>
+            <img src="../styles/images/2013_DxD_NEW_Akeno.webp" alt="">
+        </div>
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+        //alert("UwU")
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("prechod");
+            console.log(slides);
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>

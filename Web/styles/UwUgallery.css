@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 80px;
+    color: azure;
+    text-align: center;
+}
+
+body {
+    margin-top: 30px;
+    background-color: black;
+}
+
+nav {
+    overflow: hidden;
+    background-color: rgb(32, 4, 59);
+    /*color: azure;
+   text-transform: uppercase;
+   height: 50px;*/
+    border-bottom: 2px solid azure;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+a.icon_logo {
+    width: 48px;
+    height: 48px;
+    background-image: url("images/PeePee.jpg");
+    background-size: 48px;
+    background-repeat: no-repeat;
+}
+
+.menu a.icon_logo:hover {
+    background-size: 50px;
+    background-color: none;
+    background-image: url("images/PeePee.jpg");
+    background-repeat: no-repeat;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    justify-content: center;
+    text-decoration: none;
+    /*line-height: 50px;*/
+}
+
+.menu a:hover {
+    background: rgb(97, 44, 146);
+    color: white;
+}
+
+a.sign {
+    float: right;
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a.sign:hover {
+    background: rgb(97, 44, 146);
+    color: white;
+}
+
+.menu input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+.hp {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.slides {
+    max-width: 1000px;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+.prechod {
+    z-index: -1;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(116, 116, 116, 0.8);
+}
+
+.cisloSlide {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 4px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.prechod img{
+    width: 320px;
+    height: 540px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

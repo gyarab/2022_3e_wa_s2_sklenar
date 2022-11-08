@@ -1,0 +1,66 @@
+header {
+    position: fixed;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-bottom: 2px solid azure;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 58px;
+    background-color: var(--bs-dark);
+}
+
+img {
+    width: 360px;
+    height: 720px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+h1 {
+   font-size: 100px;
+    color: azure;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1.hero-image {
+    background-image: url('../styles/images/akeno-anime.gif');
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+p{
+    color: azure;
+   /* text-align: center;*/
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0.5%;
+}
+li{
+    color: azure;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column_a {
+    flex: 33, 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}

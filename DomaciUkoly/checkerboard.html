@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+</head>
+
+<body style="background-color: rgb(255, 0, 140);">
+    <p style="text-align: center;"><canvas></canvas></p>
+    <script>
+        var canvas = document.querySelector('canvas');
+        canvas.height = 800;
+        canvas.width = 800;
+        var c = canvas.getContext('2d');
+        for (let index = 0; index < 8; index++) {
+            for (let index1 = 0; index1 < 8; index1++) {
+                if (index % 2 == 0) {
+                    if (index1 % 2 != 0) {
+                        c.fillStyle = "black";
+                    }
+                    else {
+                        c.fillStyle = "white";
+                    }
+                }
+                else {
+                    if (index1 % 2 != 0) {
+                        c.fillStyle = "white";
+                    }
+                    else {
+                        c.fillStyle = "black";
+                    }
+                }
+                c.fillRect(index * canvas.height / 8, index1 * canvas.width / 8, canvas.width / 8, canvas.height / 8);
+            }
+        }
+        console.log(canvas);
+    </script>
+    
+</body>
+</html>

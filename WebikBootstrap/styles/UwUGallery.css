@@ -7,7 +7,7 @@ header {
     width: 100%;
 }
 
-main,body {
+main {
     margin-top: 58px;
     background-color: var(--bs-dark);
 }

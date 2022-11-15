@@ -68,7 +68,7 @@ li {
     padding: 0 4px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .column {
         flex: 50%;
         max-width: 50%;

@@ -7,7 +7,8 @@ header {
     width: 100%;
 }
 
-main {
+main,
+body {
     margin-top: 58px;
     background-color: var(--bs-dark);
 }
@@ -24,26 +25,28 @@ img {
 }
 
 h1 {
-   font-size: 100px;
+    font-size: calc(2.375rem + 2.5vw);
     color: azure;
     text-align: center;
     font-weight: bold;
 }
 
 h1.hero-image {
-    background-image: url('../styles/images/akeno-anime.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../styles/images/akeno-anime.gif');
     height: 200px;
     background-position: center;
     background-size: cover;
 }
-p{
+
+p {
     color: azure;
-   /* text-align: center;*/
+    /* text-align: center;*/
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 0.5%;
 }
-li{
+
+li {
     color: azure;
 }
 
@@ -63,4 +66,32 @@ li{
     flex: 33, 33%;
     max-width: 33%;
     padding: 0 4px;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column_a {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .prechod {
+        display: flex;
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: calc(2.375rem + 1.5vw);
+    }
 }

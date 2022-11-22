@@ -39,53 +39,50 @@
     <div>
       <h1>Akeno Himejima Gallery</h1>
     </div>
-    <div class="container">
-      <div class="slides">
-        <div class="prechod fade">
-          <div class="cisloSlide">1 / 5</div>
-          <img src="../styles/images/Akeno_uniform.webp" alt="">
+    <div class="container prezentace">
+      <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="../styles/images/Akeno_uniform.webp" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../styles/images/Akeno_new-2.webp" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../styles/images/ID2QtkjyBvUYS_-_Copy.webp" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../styles/images/Akeno_DxD_Born_Visual_CollectionEdited.webp" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../styles/images/2013_DxD_NEW_Akeno.webp" class="d-block" alt="...">
+          </div>
         </div>
-        <div class="prechod fade">
-          <div class="cisloSlide">2 / 5</div>
-          <img src="../styles/images/Akeno_new-2.webp" alt="F">
-        </div>
-        <div class="prechod fade">
-          <div class="cisloSlide">3 / 5</div>
-          <img src="../styles/images/ID2QtkjyBvUYS_-_Copy.webp" alt="FF">
-        </div>
-        <div class="prechod fade">
-          <div class="cisloSlide">4 / 5</div>
-          <img src="../styles/images/Akeno_DxD_Born_Visual_CollectionEdited.webp" alt="F">
-        </div>
-        <div class="prechod fade">
-          <div class="cisloSlide">5 / 5</div>
-          <img src="../styles/images/2013_DxD_NEW_Akeno.webp" alt="">
-        </div>
-        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlide(1)">&#10095;</a>
-      </div>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <script src="../scripts/UwUGallery.js"></script>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </body>
 
 </html>

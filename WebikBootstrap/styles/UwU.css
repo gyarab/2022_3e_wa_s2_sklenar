@@ -85,6 +85,12 @@ li {
     border: 1px solid red;
 }
 
+@media (max-width: 1000px) {
+        h1 {
+          font-size: calc(1.5rem + 1vw);
+    }
+}
+
 @media (max-width: 850px) {
     .column {
         flex: 50%;
@@ -106,9 +112,5 @@ li {
     .prechod {
         display: flex;
         z-index: -1;
-    }
-
-    h1 {
-        font-size: calc(2.375rem + 1.5vw);
     }
 }

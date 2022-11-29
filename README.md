@@ -2,5 +2,3 @@
 <p align="center" width="100%">
     <img src="https://media.tenor.com/x4TPrE9RvQgAAAAC/marin-marin-kitagawa.gif" width="400" height="400">
 </p>
-
-jsme bráchové pane profesore!!!!

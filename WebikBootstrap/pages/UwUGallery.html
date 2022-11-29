@@ -10,7 +10,12 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Font awesome font icons v6.2.1 -->
+  <link rel="stylesheet" href="../styles/fontawesome/css/all.min.css">
+  <!-- bootstrap font icons v1.10.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../styles/UwUGallery.css">
+  <link rel="icon" href="../styles/images/PeePee.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,6 +23,9 @@
     <!-- place navbar here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
+        <div class="navbar-brand">
+          <i class="bi bi-github"></i>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,49 +44,55 @@
     </nav>
   </header>
   <main>
-    <div>
+
+    <div class="container">
       <h1>Akeno Himejima Gallery</h1>
     </div>
-    
-    <div class="container prezentace">
-      <div id="carouselFade" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+    <div class="container">
+      <div class="container prezentace">
+        <div id="carouselFade" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <img src="../styles/images/Akeno_uniform.webp" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../styles/images/Akeno_new-2.webp" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../styles/images/ID2QtkjyBvUYS_-_Copy.webp" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../styles/images/Akeno_DxD_Born_Visual_CollectionEdited.webp" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../styles/images/2013_DxD_NEW_Akeno.webp" class="d-block" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
         </div>
-
-        <div class="carousel-inner ">
-          <div class="carousel-item active">
-            <img src="../styles/images/Akeno_uniform.webp" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../styles/images/Akeno_new-2.webp" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../styles/images/ID2QtkjyBvUYS_-_Copy.webp" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../styles/images/Akeno_DxD_Born_Visual_CollectionEdited.webp" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../styles/images/2013_DxD_NEW_Akeno.webp" class="d-block" alt="...">
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
+      </div>
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="btn btn-dark btn-outline-dark" href="../styles/images/Ř.PNG">Ř</a>
       </div>
     </div>
   </main>

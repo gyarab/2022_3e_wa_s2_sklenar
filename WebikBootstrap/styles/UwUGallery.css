@@ -49,6 +49,16 @@ p {
 li {
     color: azure;
 }
+/*
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    padding: 12%;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    background-color: rgba(116, 116, 116, 0.8);
+}*/
 
 @media screen and (max-width: 600px) {
     .prezentace {

@@ -19,7 +19,7 @@
     <link rel="icon" href="styles/images/PeePee.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="text-light bg-dark">
     <header>
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -150,7 +150,20 @@
                 </li>
             </ul>
 
-            <div class="row">
+            <div class="mb-3">
+                <label for="" class="form-label">Your questions</label>
+
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                I agree to Terms and conditions:  <input type="checkbox" class="mx-2" name="Terms and conditions" id="">
+                <div class="d-flex flex-row">
+                    Image: <input type="file" class="mx-2" name="image" id="">
+                    <input type="submit" class="me-auto" value="SEND">
+                </div>
+
+                <small id="helpId" class="form-text text-muted">Your questions about us or Akeno</small>
+            </div>
+
+            <div class="row text-dark">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
